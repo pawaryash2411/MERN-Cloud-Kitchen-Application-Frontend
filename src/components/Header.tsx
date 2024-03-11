@@ -106,11 +106,16 @@ function Header() {
                     <p className="font-semibold">{user?.email}</p>
                   </DropdownItem>
                   <DropdownItem
-                    key="settings"
                     className="flex flex-row justify-center"
                     color="secondary"
                   >
-                    Manage Restaurant
+                    <Link to="/manage-restaurant">Manage Restaurant</Link>
+                  </DropdownItem>
+                  <DropdownItem
+                    className="flex flex-row justify-center"
+                    color="secondary"
+                  >
+                    <Link to="/add-restaurant">Add Restaurant</Link>
                   </DropdownItem>
 
                   <DropdownItem color="secondary">

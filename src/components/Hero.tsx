@@ -8,14 +8,14 @@ const Hero = () => {
   return (
     <>
       <section className="relative">
-        <video
+        {/* <video
           autoPlay
           loop
           muted
           className="absolute inset-0 w-full h-full object-cover opacity-50"
         >
           <source src={VideoOne} type="video/mp4" />
-        </video>
+        </video> */}
 
         <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
           <div className="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right text-white">

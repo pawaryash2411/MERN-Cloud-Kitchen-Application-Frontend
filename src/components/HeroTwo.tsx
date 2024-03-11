@@ -29,7 +29,7 @@ const HeroTwo = () => {
             </div>
 
             <div className="grid grid-cols-2 gap-4 md:grid-cols-1 lg:grid-cols-2">
-              <video
+              {/* <video
                 autoPlay
                 loop
                 muted
@@ -44,7 +44,7 @@ const HeroTwo = () => {
                 className="h-40 w-full object-cover sm:h-56 md:h-full"
               >
                 <source src={Video2} type="video/mp4" />
-              </video>
+              </video> */}
             </div>
           </div>
         </div>

@@ -7,6 +7,8 @@ import HomePage from "./Pages/Home/HomePage";
 import AuthCallback from "./Auth/AuthCallback";
 import UserProfile from "./Pages/Profile/UserProfile";
 import ProtectedRoutes from "./Auth/ProtectedRoutes";
+import ManageRestaurant from "./Pages/Restaurant/ManageRestaurant";
+import AddRestaurant from "./Pages/Restaurant/AddRestaurant";
 
 function App() {
   return (
@@ -17,21 +19,17 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route element={<ProtectedRoutes />}>
           <Route path="/update-profile" element={<UserProfile />} />
+          <Route path="/manage-restaurant" element={<ManageRestaurant />} />
+          <Route path="/add-restaurant" element={<AddRestaurant />} />
         </Route>
-
         <Route path="*" element={<Navigate to={"/"} />} />
       </Routes>
-
       <Footer />
 
       <Toaster
         position="top-right"
         toastOptions={{
           duration: 3000,
-          style: {
-            background: " #6a1b9a",
-            color: "#ffff",
-          },
           success: {
             duration: 3000,
           },

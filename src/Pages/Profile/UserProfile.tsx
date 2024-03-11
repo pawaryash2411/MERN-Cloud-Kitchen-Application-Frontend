@@ -5,7 +5,6 @@ import { useAuth0 } from "@auth0/auth0-react";
 import { useGetUserDetails, useUpdateUserProfile } from "../../api/UserApi";
 import toast from "react-hot-toast";
 import { useEffect } from "react";
-import { User } from "../../utils/types";
 
 const UserProfile = () => {
   const {
@@ -18,8 +17,6 @@ const UserProfile = () => {
   const { isLoading: isGetLoading, currentUser: userDetails } =
     useGetUserDetails();
   const { isLoading, UpdateUser } = useUpdateUserProfile();
-
-  console.log(userDetails?.user);
 
   const handleUpdateUser = (data: object) => {
     console.log("FF", data);
